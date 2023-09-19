@@ -1,0 +1,7 @@
+* Life Wiki
+
+  > This is my first attempt to try to create a NORG file using nvim -neorg plugin as an alternative to emacs orgs mode
+
+** Things to do:
+   ~ Create a {:../life/Routine:}[Routine] using norg format and commands
+   ~ Create a 
