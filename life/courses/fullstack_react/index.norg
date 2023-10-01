@@ -1,11 +1,13 @@
 * Fullstack React and express course (MERN Stack)
+
 ** Chapters 
-  ~ {:./introduction:}[Introduction]
+ 
+   ~ {:./introduction:}[Introduction]
    ~ {:./backend-intro:}[Backend Intro]    
-    ~ Backend Project Setup
-    ~ Backend Architecture Feature
-    ~ Backend Auth and Password Reset
-    ~ Backend Post Feature
-    ~ Backend Post reaction feature
-    ~ Backend Comments feature
-    ~ Backend Follow and Block features
+   ~ Backend Project Setup
+   ~ Backend Architecture Feature
+   ~ Backend Auth and Password Reset
+   ~ Backend Post Feature
+   ~ Backend Post reaction feature
+   ~ Backend Comments feature
+   ~ Backend Follow and Block features
