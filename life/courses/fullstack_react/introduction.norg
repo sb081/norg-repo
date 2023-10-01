@@ -1,0 +1,46 @@
+* Introduction to the course
+
+** Features
+   - Authentication
+   - Posts
+   - Comments
+   - Reactions
+   - Private Messaging
+   - Followers system
+   - Image Upload
+   - Notifications
+
+** Tech Stack 
+
+*** Backend
+    - Node JS
+    - Mongo DB
+    - TypeScript
+    - Redis
+    - Sendgrid
+    - PM2
+    - Express JS
+    - Cloudinary
+    - Bull Messaging Queue
+
+*** Frontend
+    - React JS
+    - Redux Toolkit
+    - Sass
+    - Axios
+    - React Icons
+    - Cloudinary
+
+*** Infrastructure and Deployment
+    - AWS
+    - Terraform
+    - Circle CI
+
+
+** Repositories
+   ~ Frontend {https://github.com/uzochukwueddie/chatty}[Chatty Frontend Repo]
+   ~ Backend {https://github.com/uzochukwueddie/chatty-backend}[Chatty Frontend Repo]
+
+
+
+
