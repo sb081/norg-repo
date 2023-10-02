@@ -4,7 +4,11 @@ description:
 authors: takuto
 categories:
 created: 2023-04-17
+<<<<<<< HEAD
 updated: 2023-10-02T19:40:05+0530
+=======
+updated: 2023-10-02T20:36:47+0530
+>>>>>>> df1c2aa (dev@mirulkhanal)
 version: 1.0.0
 @end
 
