@@ -4,7 +4,7 @@ description:
 authors: takuto
 categories:
 created: 2023-04-17
-updated: 2023-09-18T21:27:17+0000
+updated: 2023-10-02T19:39:38+0530
 version: 1.0.0
 @end
 
@@ -35,8 +35,7 @@ version: 1.0.0
    Here is my basic config. I'll explain about `plugins` in {* Plugins}.
 
    @code lua
-   -- lazy.nvim spec
-   local M = {
+{
      "nvim-neorg/neorg",
      ft = "norg",
      dependencies = {
@@ -47,25 +46,34 @@ version: 1.0.0
      },
      build = ":Neorg sync-parsers",
      cmd = "Neorg",
-   }
-   local plugins = {
-     ["core.defaults"] = {},
-     ["core.completion"] = { config = { engine = "nvim-cmp", name = "[Norg]" } },
-     ["core.integrations.nvim-cmp"] = {},
-     ["core.concealer"] = { config = { icon_preset = "diamond" } },
-     ["core.export"] = {},
-     ["core.keybinds"] = {
-       -- https://github.com/nvim-neorg/neorg/blob/main/lua/neorg/modules/core/keybinds/keybinds.lua
-       config = {
-         default_keybinds = true,
-         neorg_leader = "<Leader><Leader>",
+    config = function()
+      require("neorg").setup {
+     load = {
+       ["core.defaults"] = {},
+       ["core.completion"] = { config = { engine = "nvim-cmp", name = "[Norg]" } },
+       ["core.integrations.nvim-cmp"] = {},
+       ["core.concealer"] = { config = { icon_preset = "diamond" } },
+       ["core.export"] = {},
+       ["core.dirman"] = {
+            config = {
+              workspaces = {
+                life = "~/Desktop/ORG/life/",
+                courses = "~/Desktop/ORG/life/courses"
+              },
+            },
+        },
+        -- Keybinds
+       ["core.keybinds"] = {
+         -- https://github.com/nvim-neorg/neorg/blob/main/lua/neorg/modules/core/keybinds/keybinds.lua
+         config = {
+           default_keybinds = true,
+           neorg_leader = "<Leader><Leader>",
+         },
        },
-     },
+     }
+    }
+    end,
    }
-   M.opts = {
-     load = plugins,
-   }
-   return M
    @end
 
    If you still have problems setting up `neorg`, `@d-r-a-b` explains more thoroughly in
