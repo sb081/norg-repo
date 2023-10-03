@@ -1,7 +1,7 @@
 @document.meta
 title: NORG Life Wiki
 description:  my first attempt to try to create a NORG file using nvim -neorg plugin as an alternative to emacs orgs mode
-authors: Mirul Khanal
+authors: Sujan Basnet
 categories: wiki,planner,finance_manager, workout_planner, meal_planner
 created: 2023-09-25
 version: 1.0.0
